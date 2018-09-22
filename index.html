@@ -27,13 +27,19 @@
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 49.988250, lng: 36.232560 },
-          zoom: 11
+          zoom: 12
         });
 
+ 
         var markerPos = {lat: 49.988250, lng: 36.232560 };
         var marker = new google.maps.Marker({
-          position: markerPos, 
-          map: map
+            position: markerPos, 
+            map: map,
+            url: 'www.google.com'
+          });
+
+        google.maps.event.addListener(marker, 'click', function() {
+          window.location.href = this.url;
         });
       }
     </script>
