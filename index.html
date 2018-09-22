@@ -29,6 +29,12 @@
           center: {lat: 49.988250, lng: 36.232560 },
           zoom: 11
         });
+
+        var markerPos = {lat: 49.988250, lng: 36.232560 };
+        var marker = new google.maps.Marker({
+          position: markerPos, 
+          map: map
+        });
       }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwfuse9wcHhDRZdAbN_Ag-UzaC9P0nQ5E&callback=initMap" async defer></script>
