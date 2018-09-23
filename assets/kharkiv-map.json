@@ -3,12 +3,17 @@
         "center": [49.988250, 36.232560],
         "zoom": 11
     },
-
+    
     "markers": [
         {
             "id": "kharkiv/tec5",
             "name": "ТЭЦ-5",
             "latlng": [49.9694877,36.1099483]
-        }
+        },
+        {
+            "id": "kharkiv/spike-builing",
+            "name": "Дом со шпилем",
+            "latlng": [49.988681, 36.233326]
+        }        
     ]
 }
