@@ -7,55 +7,55 @@
     
     "pages": [
         {
-            "id": "kharkiv/tec5",
+            "id": "ukraine/kharkiv/tec5",
             "name": "ТЭЦ-5",
             "section": "Песочин",
             "latlng": [49.9694877,36.1099483]
         },
         {
-            "id": "kharkiv/spike-building",
+            "id": "ukraine/kharkiv/spike-building",
             "name": "Дом со шпилем",
             "section": "Центр",
             "latlng": [49.988681, 36.233326]
         },
         {
-            "id": "kharkiv/milkyway-building",
+            "id": "ukraine/kharkiv/milkyway-building",
             "name": "ЖК Млечный Путь",
             "section": "Центр",
             "latlng": [50.005930, 36.257506]
         },
         {
-            "id": "kharkiv/luxemburg-building",
+            "id": "ukraine/kharkiv/luxemburg-building",
             "name": "ЖК Люксембург",
             "section": "Центр",
             "latlng": [50.020122, 36.238359]
         },
         {
-            "id": "kharkiv/meridian-building",
+            "id": "ukraine/kharkiv/meridian-building",
             "name": "ЖК Меридиан",
             "section": "Салтовка",
             "latlng": [50.030813, 36.359455]
         },
         {
-            "id": "kharkiv/zhuravlevka",
+            "id": "ukraine/kharkiv/zhuravlevka",
             "name": "Журавлевка",
             "section": "Частный сектор",
             "latlng": [50.012096, 36.272438]
         },
         {
-            "id": "kharkiv/aquazhur",
+            "id": "ukraine/kharkiv/aquazhur",
             "name": "Журавлевский гидропарк",
             "section": "Салтовка",
             "latlng": [50.026041, 36.310902]
         },
         {
-            "id": "kharkiv/kovpaka-str",
+            "id": "ukraine/kharkiv/kovpaka-str",
             "name": "Новые дома около ул. Ковпака",
             "section": "Частный сектор",
             "latlng": [50.038997, 36.307368]
         },
         {
-            "id": "kharkiv/kvituche-lake",
+            "id": "ukraine/kharkiv/kvituche-lake",
             "name": "Озеро Квитуче, около ул. Героев Труда",
             "section": "Салтовка",
             "latlng": [50.031791, 36.320742]
