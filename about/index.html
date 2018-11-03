@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>Харьков | Skyline Walker - C высоты птичьего полета</title>
+  <title>О проекте | Skyline Walker - C высоты птичьего полета</title>
   <base href="/">
   <meta name="description" content="Качественная аэросъемка города с квадрокоптера (4К или 1080p видео). Все места съемки отмечены на карте города.">
   <meta name="keywords" content="аэросъемка, с высоты, вид с квадрокоптера, ">
@@ -84,49 +84,17 @@
   </nav>
 
     
-  <div id="map" class="mapstyle"></div>
-
-  <script>
-  var app = new Vue({
-    el: '#map',
-    
-    data: {
-    },
-
-    mounted: function () {
-      var map = L.map('map').setView([49.988250, 36.232560], 11);
-      //L.Icon.Default.imagePath = 'assets/images';
-
-      // it is required to show attribution to see the map
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-      }).addTo(map);
-
-      var marker;
-
-        marker = L.marker([50.045888, 36.214700]);
-        marker.addTo(map).bindPopup('<h6><a href="&#x2F;ukraine&#x2F;kharkiv&#x2F;alekseevka-pavlovo-pole">Полет от Алексеевки к 23 августа</a></h6>');
-        marker = L.marker([50.026041, 36.310902]);
-        marker.addTo(map).bindPopup('<h6><a href="&#x2F;ukraine&#x2F;kharkiv&#x2F;aquazhur">Журавлевский гидропарк</a></h6>');
-        marker = L.marker([50.038997, 36.307368]);
-        marker.addTo(map).bindPopup('<h6><a href="&#x2F;ukraine&#x2F;kharkiv&#x2F;kovpaka-str">Новые дома около ул. Ковпака</a></h6>');
-        marker = L.marker([50.031791, 36.320742]);
-        marker.addTo(map).bindPopup('<h6><a href="&#x2F;ukraine&#x2F;kharkiv&#x2F;kvituche-lake">Озеро Цветущее</a></h6>');
-        marker = L.marker([50.020122, 36.238359]);
-        marker.addTo(map).bindPopup('<h6><a href="&#x2F;ukraine&#x2F;kharkiv&#x2F;luxemburg-building">ЖК Люксембург</a></h6>');
-        marker = L.marker([50.030813, 36.359455]);
-        marker.addTo(map).bindPopup('<h6><a href="&#x2F;ukraine&#x2F;kharkiv&#x2F;meridian-building">ЖК Меридиан</a></h6>');
-        marker = L.marker([50.005930, 36.257506]);
-        marker.addTo(map).bindPopup('<h6><a href="&#x2F;ukraine&#x2F;kharkiv&#x2F;milkyway-building">ЖК Млечный Путь</a></h6>');
-        marker = L.marker([49.988681, 36.233326]);
-        marker.addTo(map).bindPopup('<h6><a href="&#x2F;ukraine&#x2F;kharkiv&#x2F;spike-building">Дом со шпилем</a></h6>');
-        marker = L.marker([49.9694877, 36.1099483]);
-        marker.addTo(map).bindPopup('<h6><a href="&#x2F;ukraine&#x2F;kharkiv&#x2F;tec5">ТЭЦ-5</a></h6>');
-        marker = L.marker([50.012096, 36.272438]);
-        marker.addTo(map).bindPopup('<h6><a href="&#x2F;ukraine&#x2F;kharkiv&#x2F;zhuravlevka">Журавлевка</a></h6>');
-    }
-  });
-  </script>
+    <div class="content-window">
+      <div class="container-fluid">
+      <div class="col-md-12">
+          <h4>О проекте</h4>
+          <p><p>Задача этого сайта собрать базу данных качественных аэросъемок Харькова c <del>высоты птичьего полета</del> квадрокоптера. Все видео сняты в формате 4К или, реже, Full HD (1080p).</p>
+<p>Для удобства все места съемок будут отмечаться на карте города.</p>
+<p>Вы также можете подписаться на наш <a href="https://www.youtube.com/channel/UCMOMjHPc8pY6VAetUtMPtCA">Youtube канал</a>.</p>
+</p>
+      </div>
+      </div>
+    </div>
 
     
 </body>
