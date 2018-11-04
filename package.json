@@ -1,0 +1,15 @@
+{
+  "name": "skylinewalker.static",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "build": "bakeit",
+    "dev": "bakeit serve"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+  }
+}

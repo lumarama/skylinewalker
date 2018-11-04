@@ -1,0 +1,30 @@
+{
+  "title": "Skyline Walker",
+  "longTitle": "Skyline Walker - C высоты птичьего полета",
+  "metaDescription": "Качественная аэросъемка города с квадрокоптера (4К или 1080p видео). Все места съемки отмечены на карте города.",
+  "metaKeywords": "аэросъемка, с высоты, вид с квадрокоптера",
+  "htmlLang": "ru",
+
+  "menuItems": [
+    { "name": "Харьков", "url": "/ukraine/kharkiv" },
+    { "name": "О проекте", "url": "/about" }
+  ],
+
+  "build": {
+    "sourceDir": "./src",
+    "outputDir": "./dist",
+
+    "templateLanguage": "handlebars",
+    "templateFileExtension": ".hbs",
+
+    "sitemapPage": "sitemap.html",
+
+    "scripts": [
+    ],
+    "styles": [
+    ],
+    "copy": [
+      { "src": "./dist/ukraine/kharkiv/index.html", "dst": "./dist/index.html" }
+    ]
+  }
+}

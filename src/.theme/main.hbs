@@ -1,11 +1,11 @@
-
-<html lang="ru">
+<template>
+<html lang="{{config.htmlLang}}">
 <head>
   <meta charset="utf-8">
-  <title>О проекте | Skyline Walker - C высоты птичьего полета</title>
+  <title>{{frontMatter.title}} | {{config.longTitle}}</title>
   <base href="/">
-  <meta name="description" content="Качественная аэросъемка города с квадрокоптера (4К или 1080p видео). Все места съемки отмечены на карте города.">
-  <meta name="keywords" content="аэросъемка, с высоты, вид с квадрокоптера, ">
+  <meta name="description" content="{{config.metaDescription}}">
+  <meta name="keywords" content="{{config.metaKeywords}}, {{frontMatter.tags}}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   
@@ -71,34 +71,23 @@
 
     <a href="/sitemap.html"></a>
 
-    
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand text-light" href="/">Skyline Walker</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div div class="collapse navbar-collapse" id="collapsingNavbar">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link" href="&#x2F;ukraine&#x2F;kharkiv">Харьков</a>
-          <a class="nav-item nav-link" href="&#x2F;about">О проекте</a>
-        </div>
-      </div>
-  </nav>
-
-    
-    <div class="content-window">
-      <div class="container-fluid">
-      <div class="col-md-12">
-          <h4>О проекте</h4>
-          <p><p>Задача этого сайта собрать базу данных качественных аэросъемок Харькова c <del>высоты птичьего полета</del> квадрокоптера. Все видео сняты в формате 4К или, реже, Full HD (1080p) и отмечены на карте города.</p>
-<p>Вы также можете подписаться на наш <a href="https://www.youtube.com/channel/UCMOMjHPc8pY6VAetUtMPtCA">Youtube канал</a>.</p>
-<p><em>Cайт создан с помощью статического генератора <a href="https://www.npmjs.com/package/bakeit">BakeIt</a>.</em></p>
-</p>
-      </div>
-      </div>
-    </div>
-
+    {{{navBar}}}
+    {{{pageContent}}}
     
 </body>
 
 </html>
+</template>
+
+<script>
+function beforeRender(engine, pageData) {
+
+    pageData.navBar = engine.renderTemplate('navbar', pageData);
+
+    if (pageData.frontMatter.template === undefined) {
+        pageData.pageContent = engine.renderTemplate('content', pageData);
+    } else {
+        pageData.pageContent = engine.renderTemplate(pageData.frontMatter.template, pageData);
+    }
+}
+</script>
